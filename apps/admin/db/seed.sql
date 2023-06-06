@@ -1,3 +1,4 @@
 --
--- Add database seed here - updates to this file are not commited to git
+-- Seed data for the admin app.
+-- Updates here are excluded from git commits
 --

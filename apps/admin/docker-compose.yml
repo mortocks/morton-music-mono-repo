@@ -32,16 +32,6 @@ services:
       WORDPRESS_DB_USER: morton-music
       WORDPRESS_DB_PASSWORD: morton-music
       WORDPRESS_DB_NAME: morton-music
-      WORDPRESS_CONFIG_EXTRA: |
-        # Security Salts, Keys, Etc
-        define('AUTH_KEY',         'fHXg}g}<(:{0jc!^n<Zy}H9|TJc4aNCC@Zo>u[{U=@kMnd78>Q<+x&#X>-=46je6');
-        define('SECURE_AUTH_KEY',  '|&-2@LI2[u(IxD&&x4mw$Fp*nl/B3|m:?`(`h^f,mq5.$YAw|?Rzr/L+;uZGucsm');
-        define('LOGGED_IN_KEY',    'VICEkB)Rx,IT+H?CVP_qm|>BT#D814:.M)s9:5{ax1QCTG5?V=Iyv+*w:w8^a,d$');
-        define('NONCE_KEY',        'Y$pL+AyKydi`|mjNS<tX(AHa1 ~(/|IO-)skjk1[mSZ`e$y<G1Q=*)/r-T`f+NTh');
-        define('AUTH_SALT',        'K0Gsl,m{p*oGc2-L2yx9c9G3f|Fsv5V>;>Na]}bdb>Q~/<u_;`>fSc~[N*/+rYKY');
-        define('SECURE_AUTH_SALT', '-DJ!HthPy17Y&0<%r[|ubwen#E7P%LvY)?|ypY<3`+FCw-iYW:,Ip4 9_hB<O|Qr');
-        define('LOGGED_IN_SALT',   'n?tr-%SFl+D#F^8wtz3E|/`^l=-VpW3(qI-BvRT|m++2mN/~p$OvHg+8+sRCxv_^');
-        define('NONCE_SALT',       'b?7viku#0aYtBn/k1IyD/4?Mu*cF ?|Hw]U0BAX>nRY.+BP`7fTD% kA~tRUZ3Sr');
 volumes:
   db_data:
   wordpress_data:

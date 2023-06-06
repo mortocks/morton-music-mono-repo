@@ -1,0 +1,12 @@
+{
+    "name": "admin",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "dev": "docker-compose up",
+      "build": "next build && next export",
+      "start": "next start",
+      "lint": "next lint"
+    }
+  }
+  

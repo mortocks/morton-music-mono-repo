@@ -1,0 +1,44 @@
+<mj-section
+  full-width="full-width"
+  background-color="#F47121"
+  padding-bottom="0"
+>
+  <mj-column width="100%">
+    <mj-image
+      src="https://mortonmusic.com/wp-content/themes/mortonmusic/img/logo.png"
+      alt=""
+      align="center"
+      width="200px"
+    />
+    <mj-text
+      color="#ffffff"
+      font-weight="bold"
+      align="center"
+      text-transform="uppercase"
+      font-size="36px"
+      letter-spacing="1px"
+      padding-top="30px"
+    >
+      Receipt
+    </mj-text>
+
+    <mj-image
+      src="../images/email-header-top.png"
+      width="600px"
+      alt=""
+      padding="0"
+      padding-top="30px"
+    />
+  </mj-column>
+</mj-section>
+
+<mj-section background-color="#F47121" padding="0">
+  <mj-column width="100%">
+    <mj-image
+      src="../images/email-header-bottom.png"
+      width="600px"
+      alt=""
+      padding="0"
+    />
+  </mj-column>
+</mj-section>

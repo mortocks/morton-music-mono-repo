@@ -1,0 +1,258 @@
+{
+    "key": "group_55e11a98eb53c",
+    "title": "Piece fields",
+    "fields": [
+        {
+            "key": "field_55e11b39da3cb",
+            "label": "Catalogue Number",
+            "name": "catalogue_number",
+            "type": "text",
+            "instructions": "The Morton Music catalogue number without spaces e.g MM1011",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "MM1011",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55e11ad8da3ca",
+            "label": "iTunes preview",
+            "name": "itunes",
+            "type": "url",
+            "instructions": "Find a version of the piece in iTunes, click the arrow on the price and select \"Copy Link\". Paste that url here. ",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/itunes.apple.com\/au\/album\/waltzing-matilda-trad.-australian\/id484831977?i=484831981"
+        },
+        {
+            "key": "field_55e3926b99f87",
+            "label": "Music sheet preview",
+            "name": "preview",
+            "type": "gallery",
+            "instructions": "Add up to 3 images of the sheet music for preview (watermarks will be automatically added).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "insert": "append",
+            "library": "all",
+            "min": 0,
+            "max": 3,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_55e4182034a39",
+            "label": "Order Here – Australian",
+            "name": "australian_distributor_link",
+            "type": "url",
+            "instructions": "Link from <a href=\"http:\/\/print.halleonard.com.au\">http:\/\/print.halleonard.com.au<\/a> where you can purchase the work",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_55e4185934a3a",
+            "label": "Order Here - Other Countries",
+            "name": "international_distributor_link",
+            "type": "url",
+            "instructions": "Link from <a href=\"http:\/\/print.halleonard.com.au\">http:\/\/print.halleonard.com.au<\/a> where you can purchase the work",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59830c94d648a",
+            "label": "Order Here – USA",
+            "name": "Usa_distributor_link",
+            "type": "url",
+            "instructions": "Link from <a href=\"http:\/\/print.halleonard.com.au\">http:\/\/print.halleonard.com.au<\/a> where you can purchase the work",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_647ab32ab63eb",
+            "label": "Alternate voicing",
+            "name": "alternate_voicing",
+            "type": "relationship",
+            "instructions": "Alternate voicing of the work in the catalogue",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "post_type": [
+                "piece"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "post_type",
+                "taxonomy"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_647ab3a3726b2",
+            "label": "Previews",
+            "name": "previews",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "show_in_graphql": 1,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_647ab3fa726b6",
+                    "label": "Media",
+                    "name": "media",
+                    "type": "file",
+                    "instructions": "Select a file from the media library",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "mp3, mpa, wav"
+                },
+                {
+                    "key": "field_647ab3bb726b3",
+                    "label": "Apple music",
+                    "name": "apple_music",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "width": "",
+                    "height": ""
+                },
+                {
+                    "key": "field_647ab3d4726b4",
+                    "label": "Spotify",
+                    "name": "spotify",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "width": "",
+                    "height": ""
+                },
+                {
+                    "key": "field_647ab3df726b5",
+                    "label": "YouTube",
+                    "name": "youtube",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "width": "",
+                    "height": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "piece"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "show_in_graphql": 1,
+    "graphql_field_name": "pieceFields",
+    "map_graphql_types_from_location_rules": 0,
+    "graphql_types": "",
+    "modified": 1685771357
+}

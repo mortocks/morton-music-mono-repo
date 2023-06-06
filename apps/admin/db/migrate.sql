@@ -14,3 +14,5 @@ UPDATE wp_postmeta SET meta_value = replace(meta_value,'https://mortonmusic.com'
 
 
 UPDATE wp_users SET user_pass = MD5('password');
+
+SELECT 'SEED MIGRATED' AS '';

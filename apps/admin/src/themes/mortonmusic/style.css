@@ -1,0 +1,680 @@
+/* @override 
+	https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic
+	https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&subset=latin%2Clatin-ext&ver=4.3
+	http://mortonmusic.builtbyandrew.com/wp-content/themes/mortonmusic/style.css */
+
+/*
+Theme Name: Morton Music
+Theme URI: https://wordpress.org/themes/twentythirteen/
+Author: Andrew Morton
+Author URI: https://hatchhead.co
+Description: Headless theme for Morton Music
+Version: 1.0
+
+*/
+
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+.content,
+footer{
+	color: #373737;
+}
+
+.navbar-nav>li>a:hover{
+	background: transparent !important;
+}
+.navbar-nav>li.active>a{
+	color: #ff761e;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+
+
+a{
+	color: #F47121;
+}
+a:hover{
+	color: #F79250;
+	text-decoration: none;
+}
+.content a:visited{
+	color: #b6907d;
+}
+
+a.button,
+input[type="submit"]{
+	background: #F47121;
+	color:  white;
+	padding: 7px 20px;
+	display: inline-block;
+	border: none;
+	text-align: center;
+}
+a.button:hover,
+input[type="submit"]:hover{
+	background: #F79250;
+}
+
+footer nav ul {
+	padding: 0px;
+}
+footer nav ul li{
+	list-style: none;
+	float: left;
+	margin: 0px 30px 0px 0px;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1040px; /* or 950px */
+}
+
+body > header{
+	background: black;
+	margin-bottom: 50px;
+	border-bottom: 3px solid #F79250;
+}
+body.home > header{
+	margin-bottom: 0px;
+}
+
+body > header img{
+	width: auto;
+	float: left;
+}
+
+body > header a {
+	color: white;
+}
+
+
+
+
+
+#ajax-search-results{
+	clear: both;
+	background: black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	display: none;
+	overflow:hidden
+}
+
+#ajax-search-results ul{
+	padding-left: 0px;
+	list-style: none;
+}
+
+#ajax-search-results ul li{
+-webkit-transition: opacity 1.3s ease;
+  -moz-transition: opacity 1.3s ease;
+  -ms-transition: opacity 1.3s ease;
+  -o-transition: opacity 1.3s ease;
+  transition: opacity 1.3s ease;
+  opacity: 1;
+}
+
+#ajax-search-results.loaded ul li{
+	opacity: 1;
+}
+
+#ajax-search-results input[type="text"]{
+	width: 100%;
+	background: transparent;
+	border-bottom: 1px solid white;
+	text-align: right;
+	padding: 0px !important;
+	height: 40px;
+	margin-top: -17px !important;
+	font-size: 30px;
+	padding-right: 10px !important;
+}
+
+li.search a:after,
+#ajax-search-results input[type="text"]:after{
+	content: "\f179" !important;
+	font: normal 27px/20px 'dashicons';
+	color: white;
+	display: block;
+	float: right;
+	margin-left: 10px;
+}
+
+
+#ajax-search-results ::-webkit-input-placeholder {
+   color: #656565;
+}
+#ajax-search-results :-moz-placeholder { /* Firefox 18- */
+   color: #656565;  
+}
+#ajax-search-results ::-moz-placeholder {  /* Firefox 19+ */
+   color: #656565;  
+}
+#ajax-search-results :-ms-input-placeholder {  
+   color: #656565;  
+}
+#ajax-search-results{
+	color: white;	
+}
+#ajax-search-results h3{
+	font-size: 20px;
+	color: #c6c6c6;
+}
+#ajax-search-results .loading,
+#ajax-search-results .no-results{
+	font-style: italic;
+	color: #949494;
+}
+#ajax-search-results .col-md-3{
+	padding-bottom: 50px;
+}
+
+#ajax-search-results .all-results{
+	text-align: right;
+}
+#ajax-search-results em{
+	color: #989898;
+	font-size: 11px;
+	padding-left: 5px;
+}
+#ajax-search-results a:hover em{
+	color: #F47121;
+}
+#ajax-search-results .more-results{
+	color: #F47121;
+	font-style: italic;
+	margin-top: 6px;
+	display: block;
+}
+
+h1, h2, h3 {
+	font-weight: 200;
+	margin-top: 0px;
+	font-family: 'Merriweather', serif;
+}
+h1{
+	margin-bottom: 30px;
+}
+h1.title,
+h3.title{
+	margin-bottom: 60px;
+	text-align: center;
+}
+h2{
+	margin-bottom: 38px;
+	font-size: 24px;
+}
+
+h2, h3,
+h2 a, h3 a{
+	font-family: 'Merriweather', serif;
+}
+
+body > footer{
+	padding: 10px 0px 15px 0px;
+	clear: both;
+}
+body > footer a{
+	color: gray;
+	font-size: 12px;
+}
+
+.wp-post-image{
+	margin-bottom: 10px;
+}
+
+section.slider{
+	position: relative;
+	background: black;
+}
+
+section.slider ul{
+	list-style: none;
+	padding: 0px;
+}
+
+section.slider .term-list h3,
+section.slider .term-list a{
+	text-align: center;
+	display: block;
+	color: white;
+}
+
+section.slider button{
+	display: none !important;
+}
+
+section.slider hr{
+	margin: 50px 0px;
+}
+section.slider img{
+	width: auto;
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+}
+section.slider .slide{
+	position: relative;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+section.slider .caption{
+	position: absolute;
+	z-index: 100;
+	color:  white;
+	top:  0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: table;
+}
+
+section.slider .caption h1{
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size: 50px;
+	margin: 0px;
+		font-family: 'Lato', sans-serif;
+	
+}
+
+
+.tab-pane{
+	padding-top: 10px;
+}
+
+.cta,
+.cta *{
+	text-align: center;
+	font-size: 24px;
+	padding: 20px 0px;
+	font-family: 'Merriweather', serif !important;
+}
+
+.cta .button{
+	margin-left: 20px;
+		font-family: 'Merriweather', serif;
+	
+	
+}
+.post-type-archive-piece h2{	
+}
+
+
+
+.catalogue-list img{
+	width: 80px;
+}
+.catalogue-list h4{
+	margin: 0px 0px 5px 0px;	
+}
+
+
+.composer-detail{
+	margin-bottom: 40px;
+}
+
+
+
+section.tabs{
+	margin-top: 50px;
+}
+
+
+
+audio{
+	margin-bottom: 10px;
+}
+
+
+
+input[type="text"],
+input[type="email"]{
+	height: 40px;
+	margin: 0 0 23px;
+	font-size: 16px;
+	font-weight: 300;
+	border: none;
+	outline: 0;
+	padding: 1% !important;
+	background: #ebebeb;
+}
+
+textarea{
+	border: none;
+	outline: 0;
+	padding: 1% !important;
+	background: #ebebeb;
+}
+
+.single-piece .composer{
+}
+.single-piece .voicing{
+	margin-bottom: 12px;
+	display: block;
+}
+
+.single-piece article header{
+	margin-bottom: 20px;
+}
+.single-piece article header h1{
+	margin-bottom: 0px;
+}
+.meta{
+	font-style: italic;
+	color:  gray;
+	font-size: 12px;
+}
+
+
+
+
+
+.pagination ul{
+	padding: 0px;
+}
+.pagination ul li{
+	list-style: none;
+	float: left;
+	margin-right: 2px;
+}
+.pagination ul li a{
+	padding: 7px;
+	text-align: center;
+}
+
+.pagination ul li.active a{
+	color: white;
+	background: #F47121;
+}
+.pagination ul li a:hover{
+	color: white;
+	background: #F79250;
+}
+
+
+
+
+
+
+
+.itunes-player{
+		max-width: 380px;
+		padding-top: 10px;
+		border-top: 1px solid lightgray;
+}
+.itunes-player .artwork{
+	float: left;
+	width: 30%;
+	padding-right: 20px;
+	margin: 0px 0px 15px 0px;
+}
+.itunes-player .artwork img{
+	margin-bottom: 5px;
+}
+.itunes-player .details{
+	float: left;
+	width: 70%;
+}
+.itunes-player h4,
+.itunes-player h5{
+	font-weight: bold;
+	margin: 0px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.itunes-player h4{
+	color: #737373;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.itunes-player .artist{
+	color: gray;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+.itunes-player audio{
+	width: 100%;
+	max-width: 320px;
+}
+
+
+
+
+
+.preview-list{
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 10px;
+}
+
+.mejs-container {
+	margin-bottom: 10px;
+}
+
+
+
+img.alignright{
+	max-width: 33%;
+	float: right;
+	margin: 0px 0px 30px 30px;
+}
+img.alignleft{
+	max-width: 33%;
+	float: left;
+	margin: 0px 30px 30px 0px;
+}
+
+
+
+
+
+
+.preview{
+	margin-bottom: 30px;
+}
+.preview .button{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.button.international{
+	background: #5c4235;
+}
+
+
+
+
+.navbar-toggle .icon-bar{
+	background: white;
+}
+
+
+.parallax{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 50px 0px;
+}
+
+.home .content{
+	color: white;
+	font-size: 24px;
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.32);
+	font-weight: lighter;
+}
+@media only screen and (min-width : 480px) {
+	.catalogue-list .title{
+		width: 230px;
+	}
+	.catalogue-list td.preview{
+		width: 94px !important;
+		display: block;
+	}
+	.parallax{
+		background-attachment: fixed;
+	}
+	
+	section.slider,
+	section.slider .slide{
+		height: 700px;
+	}
+	
+	
+	
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 767px) {
+
+	
+	section.slider,
+	section.slider .slide{
+		height: 600px;
+	}
+	
+	section.slider .slide .caption h1{
+		font-size: 2em;
+	}
+	
+	a.button{
+		display: block;
+		width: 95%;
+		margin: 10px auto !important;
+	}
+	
+	table.catalogue-list th,
+	table.catalogue-list tr.heading{
+		display: none !important;
+	}
+	table,
+	table.catalogue-list{
+		border: none !important;
+	}
+	table.catalogue-list tr{
+		display: block;
+		border: none;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #d2d2d2;
+	
+	}
+	table.catalogue-list td{
+		display: block;
+		float: left;
+		width: inherit;
+		white-space: normal !important;
+		word-wrap: normal;
+		border: none !important;
+	}
+	table.catalogue-list td.composer,
+	table.catalogue-list td.voicing{
+		width: 50%;
+		text-align: center;
+	}
+	
+	table.catalogue-list .preview{
+		margin-bottom: 0px;
+	}
+	
+	
+	.nav-tabs li.preview-tab{
+		display: none;
+	}
+	
+	.nav-tabs li{
+		width: 50%;
+		text-align: center;
+	}
+	
+	
+	
+	#ajax-search-results .works,
+	#ajax-search-results .composers,
+	#ajax-search-results .pages,
+	#ajax-search-results .no-results{
+		display: none;
+	}
+}
+
+
+.prev-next-nav{
+	float: right;
+}
+.prev-next-nav a{
+	background: #F47121;
+	color:  white;
+	padding: 7px 20px;
+	display: inline-block;
+	border: none;
+	text-align: center;
+	max-width: 50%;
+}
+
+
+.prev-next-nav a[rel~="next"]{
+}
+
+
+
+@media print {
+  audio,
+  .sharedaddy,
+  body > footer,
+  body > footer{
+  	display: none;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+ul.composer-list{
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+ul.composer-list .letter{
+	font-size: 20px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
