@@ -1,4 +1,4 @@
 # Wordpress
 
 src/uploads/*
-db/*
+/db/seed.sql
