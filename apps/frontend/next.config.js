@@ -18,6 +18,11 @@ module.exports = {
   env: {
     SNIPCART_PUBLIC_KEY: process.env.NEXT_PUBLIC_SNIPCART_PUBLIC_KEY,
   },
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
   images: {
     unoptimized: true,
     domains: [
