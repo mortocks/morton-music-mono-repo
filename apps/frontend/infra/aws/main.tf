@@ -67,7 +67,7 @@ resource "aws_amplify_app" "nextjs_app" {
   description = "Next.js frontend for morton music store"
 
   # GitHub personal access token
-  access_token = "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"
+  access_token = ""
 
   iam_service_role_arn = aws_iam_role.mm_amplify_role.arn
 
