@@ -71,6 +71,10 @@ resource "aws_amplify_app" "nextjs_app" {
 
   iam_service_role_arn = aws_iam_role.mm_amplify_role.arn
 
+  variables = {
+    SENDGRID_API_KEY = "test"
+  }
+
   # The default build_spec added by the Amplify Console for React.
   build_spec = <<-EOT
     version: 0.1
