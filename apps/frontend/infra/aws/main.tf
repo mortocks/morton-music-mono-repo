@@ -63,7 +63,7 @@ resource "aws_amplify_domain_association" "mm_amplify_domain" {
 
 resource "aws_amplify_app" "nextjs_app" {
   name        = "morton-music-nextjs-app"
-  repository  = "https://github.com/mortocks/morton-music-store"
+  repository  = "https://github.com/mortocks/morton-music-mono-repo" 
   description = "Next.js frontend for morton music store"
 
   # GitHub personal access token
