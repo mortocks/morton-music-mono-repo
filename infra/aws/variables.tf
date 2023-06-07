@@ -1,4 +1,4 @@
-variable github_access_token {
+variable "github_access_token" {
   description = "Personal access token from github"
-  type = string 
+  type        = string
 }

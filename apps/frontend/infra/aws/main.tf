@@ -71,10 +71,6 @@ resource "aws_amplify_app" "nextjs_app" {
 
   iam_service_role_arn = aws_iam_role.mm_amplify_role.arn
 
-  variables = {
-    SENDGRID_API_KEY = "test"
-  }
-
   # The default build_spec added by the Amplify Console for React.
   build_spec = <<-EOT
     version: 0.1
@@ -109,6 +105,7 @@ resource "aws_amplify_app" "nextjs_app" {
     ENV                             = "test"
     ADMIN_API_URL                   = "https://mortonmusic.com/graphql"
     NEXT_PUBLIC_SNIPCART_PUBLIC_KEY = "OTk2YWFlZGItNTc0ZC00OGJkLThjZTQtZjU4NmRmYjMyYjNlNjM4MTk4MzExMjIwNDYyNTUx"
+    SENDGRID_API_KEY = "test"
   }
 
 }
