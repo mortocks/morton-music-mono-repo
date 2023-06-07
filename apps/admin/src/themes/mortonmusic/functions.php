@@ -116,6 +116,12 @@ function featureUrl(){
 
 
 
+function my_new_graphql_endpoint() {
+	return 'graphql';
+  };
+  
+  add_filter( 'graphql_endpoint', 'my_new_graphql_endpoint' );
+
 
 
 
@@ -577,6 +583,12 @@ function is_wpLogin(){
     return ((in_array($ABSPATH_MY.'wp-login.php', get_included_files()) || in_array($ABSPATH_MY.'wp-register.php', get_included_files()) ) || (isset($_GLOBALS['pagenow']) && $GLOBALS['pagenow'] === 'wp-login.php') || $_SERVER['PHP_SELF']== '/wp-login.php');
 }
 
+function is_graphql(){
+    $ABSPATH_MY = str_replace(array('\\','/'), DIRECTORY_SEPARATOR, ABSPATH);
+    return ((in_array($ABSPATH_MY.'wp-login.php', get_included_files()) || in_array($ABSPATH_MY.'wp-register.php', get_included_files()) ) || (isset($_GLOBALS['pagenow']) && $GLOBALS['pagenow'] === 'wp-login.php') || $_SERVER['PHP_SELF']== '/wp-login.php');
+}
+
+
 
 // Disable front end
 function redirect_to_backend() {
@@ -585,4 +597,4 @@ function redirect_to_backend() {
         exit();
     }
 }
-add_action( 'init', 'redirect_to_backend' );
+add_action( 'template_redirect', 'redirect_to_backend' );

@@ -18,6 +18,8 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css"
         />
+        <meta property="og:locale" content="en_AU" />
+        <meta property="og:site_name" content="Morton Music" />
 
         <script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js" />
       </Head>
