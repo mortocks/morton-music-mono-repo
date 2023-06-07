@@ -3,3 +3,9 @@ variable "aws_region" {
   type        = string
   default     = "ap-southeast-2"
 }
+
+
+variable github_access_token {
+  description = "Personal access token from github"
+  type = string 
+}

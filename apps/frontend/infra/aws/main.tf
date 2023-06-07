@@ -67,13 +67,14 @@ resource "aws_amplify_app" "nextjs_app" {
   description = "Next.js frontend for morton music store"
 
   # GitHub personal access token
-  access_token = ""
+  access_token = var.github_access_token
 
   iam_service_role_arn = aws_iam_role.mm_amplify_role.arn
 
   # The default build_spec added by the Amplify Console for React.
   build_spec = <<-EOT
     version: 0.1
+    appRoot: apps/frontend
     frontend:
       phases:
         preBuild:
